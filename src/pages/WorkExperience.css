@@ -1,0 +1,132 @@
+/* ==============================
+   🌟 Netflix-Themed Work Experience Styling
+   ============================== */
+
+.timeline-container {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #141414;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated gradient overlay (subtle red lighting) */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(229, 9, 20, 0.06), rgba(0, 0, 0, 0.9));
+  z-index: 0;
+  animation: slowGlow 8s ease-in-out infinite alternate;
+}
+
+@keyframes slowGlow {
+  0% { opacity: 0.5; transform: scale(1); }
+  100% { opacity: 0.9; transform: scale(1.05); }
+}
+
+/* ===========================
+   🔴 Header (Netflix Red)
+   =========================== */
+
+.timeline-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #e50914;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* Fade-in from below animation */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ===========================
+   ⚙️ Timeline Element Styling
+   =========================== */
+
+.vertical-timeline-element-content {
+  background: rgba(30, 30, 30, 0.9);
+  border-left: 4px solid #e50914;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Smooth hover scale and red glow */
+.vertical-timeline-element-content:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
+  border-left-color: #ff1c24;
+}
+
+/* Timeline content text */
+.vertical-timeline-element-content h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.vertical-timeline-element-content h4 {
+  color: #e50914;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.vertical-timeline-element-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+
+.vertical-timeline-element-icon {
+  background-color: #e50914;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px rgba(229, 9, 20, 0.4); transform: scale(1); }
+  50% { box-shadow: 0 0 25px rgba(229, 9, 20, 0.8); transform: scale(1.1); }
+  100% { box-shadow: 0 0 10px rgba(229, 9, 20, 0.4); transform: scale(1); }
+}
+
+
+.timeline-footer {
+  margin-top: 50px;
+  font-size: 1.1rem;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  animation: fadeInUp 2s ease-in-out forwards;
+}
+
+.timeline-footer .icon {
+  color: #e50914;
+  font-size: 1.8rem;
+  animation: glow 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes glow {
+  from { filter: drop-shadow(0 0 2px #e50914); }
+  to { filter: drop-shadow(0 0 10px #ff4d4d); }
+}

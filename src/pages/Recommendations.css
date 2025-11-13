@@ -1,0 +1,143 @@
+.recommendations-container {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #141414;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.recommendations-title {
+  font-size: 2.5rem;
+  color: #e50914;
+  font-weight: 700;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  animation: fadeInDown 1.2s ease-in-out;
+}
+
+.recommendations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.recommendation-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  width: 340px;
+  max-width: 90%;
+  text-align: left;
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  transition: all 0.4s ease;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.2);
+}
+
+.recommendation-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.5);
+}
+
+.recommendation-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.recommendation-avatar {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+  border: 3px solid #e50914 !important;
+  background: #222;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommendation-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.6);
+}
+
+
+.rec-name {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.rec-title {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.rec-date {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.rec-quote {
+  font-style: italic;
+  color: #f5f5f5;
+  margin: 15px 0;
+  line-height: 1.5;
+  border-left: 3px solid #e50914;
+  padding-left: 10px;
+}
+
+.rec-quote,
+.rec-body {
+  overflow: visible !important;
+  text-overflow: unset !important;
+  white-space: normal !important;
+  display: block;
+  line-height: 1.6;
+  max-height: none !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.recommendation-card {
+  overflow: visible !important;
+  max-height: none !important;
+}
+
+.recommendation-card:hover .rec-body {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
+.recommendation-avatar {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border: 3px solid #e50914 !important;
+  background: #222;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommendation-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.6);
+}
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

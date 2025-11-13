@@ -1,0 +1,229 @@
+.contact-container {
+  padding: 100px 20px;
+  background: radial-gradient(circle at 20% 20%, #181818, #0b0b0b);
+  color: #e6e6e6;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+  min-height: 100vh;
+}
+
+/* LinkedIn badge-style header */
+.linkedin-badge-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #1a1a1a, #111);
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin: 0 auto 30px;
+  box-shadow: 0 8px 25px rgba(229, 9, 20, 0.25), 0 0 15px rgba(255, 255, 255, 0.05);
+  color: #e6e6e6;
+  max-width: 420px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.linkedin-badge-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 35px rgba(229, 9, 20, 0.5);
+}
+
+.badge-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 18px;
+  border: 2px solid #e50914;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);
+}
+
+.badge-content {
+  text-align: left;
+}
+
+.badge-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.badge-title {
+  font-size: 1rem;
+  margin: 3px 0;
+  color: #bbb;
+}
+
+.badge-description {
+  font-size: 0.85rem;
+  margin: 6px 0;
+  color: #ccc;
+  line-height: 1.3rem;
+}
+
+.badge-company {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.badge-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0077b5;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.badge-link:hover {
+  background-color: #005983;
+  transform: scale(1.05);
+}
+
+.linkedin-icon {
+  margin-right: 6px;
+}
+
+/* Contact Text */
+.contact-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin: 30px 0;
+  line-height: 1.6rem;
+}
+
+/* Contact details section */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(145deg, #1b1b1b, #121212);
+  padding: 14px 25px;
+  border-radius: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.contact-item:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(229, 9, 20, 0.6);
+}
+
+.contact-icon {
+  font-size: 1.6rem;
+  color: #e50914;
+}
+
+.contact-link {
+  color: #fff;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #e50914;
+  text-decoration: underline;
+}
+
+/* Fun text */
+.contact-fun {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #e6e6e6;
+}
+
+.coffee-icon {
+  font-size: 2rem;
+  color: #ff9900;
+  animation: swing 1s infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes swing {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(25deg); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .linkedin-badge-custom {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .badge-avatar {
+    margin: 0 0 12px 0;
+  }
+}
+
+.badge-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.badge-link.linkedin-btn {
+  background-color: #0077b5;
+}
+
+.badge-link.linkedin-btn:hover {
+  background-color: #005983;
+}
+
+.badge-link.github-btn {
+  background-color: #24292e;
+}
+
+.badge-link.github-btn:hover {
+  background-color: #000;
+}
+
+.badge-link.resume-btn {
+  background-color: #e50914;
+}
+
+.badge-link.resume-btn:hover {
+  background-color: #b0060f;
+}
+
+.resume-icon {
+  margin-right: 6px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
