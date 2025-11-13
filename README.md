@@ -1,150 +1,98 @@
-# Dhawal Sarode – Netflix‑Themed Portfolio 🚀
-
-A fully interactive, Netflix‑inspired personal portfolio built using **React + TypeScript**, featuring dynamic profile modes, immersive animations, and a cinematic UI.
-
----
-
-## 🌐 Live Demo  
-Add your Vercel deployment link here after deployment.
+# 🎬 Netflix-Themed Personal Portfolio  
+A cinematic, interactive personal portfolio inspired by the Netflix interface — built with React + TypeScript.  
+Designed to showcase your skills, projects, career journey, and personality through a smooth, immersive UI.
 
 ---
 
-## 🎬 About the Project  
-
-This project reimagines a developer portfolio as a **Netflix‑style streaming platform**, allowing users (Recruiter, Developer, Stalker, Adventurer) to explore sections like:
-
-- Career Goals  
-- Skills  
-- Projects  
-- Work Experience  
-- Certifications  
-- Recommendations  
-- Music  
-- Motivation & Mindset  
-- Behind the Code  
-
-Each profile experiences a customized interface with tailored **Top Picks** and **Continue Watching** rows.
+## 🚀 Live Demo  
+🔗 **Live Portfolio:** https://netflix-portfolio-self.vercel.app/  
 
 ---
 
-## 🧩 Features  
-
-### 🎥 Netflix‑Styled Intro Animation  
-- Custom logo animation  
-- Netflix “ta‑dum” sound  
-- Auto‑redirect to profile selection  
-
-### 👤 Profile Selection  
-Four profiles with unique themes & content layout.
-
-### 🔥 Cinematic Sections  
-- Fully responsive  
-- Smooth animations  
-- High‑quality thumbnails  
-- Hover effects & depth shadows  
-
-### 💼 Project Showcases  
-Each project includes:
-- Custom thumbnail  
-- Rich description  
-- Tech stack tags  
-- GitHub link  
-- Docs Hub (Drive link)
+## ⭐ Features  
+- 🎥 **Netflix-style cinematic UI** (dynamic hero, hover animations, smooth transitions)  
+- 🧑‍💻 **Profiles section** — Recruiter, Developer, Stalker, Adventure  
+- 🎯 **Career Goals** — structured, polished professional growth roadmap  
+- 💼 **Work Experience** — timeline-based presentation  
+- 🛠️ **Skills (Tech Stack)** — modern badge/grid layout  
+- 🧪 **Projects Section** — with thumbnails, tags, GitHub links & hover effects  
+- 🔍 **Behind the Code** — concise breakdown of each project with real contributions  
+- 🧠 **Motivation & Mindset** — your personal values & thought process  
+- 🎵 **Music Page** — curated soundtracks for focus & creativity  
+- 🌐 **Fully responsive** (mobile, tablet, desktop)  
+- 🎨 **Custom CSS theme** with Netflix red (#E50914)
 
 ---
 
-## 🛠️ Tech Stack  
-
-### **Frontend**
-- React + TypeScript  
-- React Router DOM  
-- Framer Motion  
-- CSS3  
-
-### **Build & Deployment**
-- Vercel  
-- Node.js 18+  
-
----
-
-## 📂 Folder Structure
-
+## 📁 Project Structure (Important Folders)  
 ```
 src/
- ├── components/
- ├── pages/
- ├── profilePage/
- ├── queries/
- ├── images/
- │    ├── logo.png
- │    ├── behind_the_code.png
- │    ├── behind_the_code_thumb.png
- │    ├── blue.png
- │    ├── career_vision.png
- │    ├── dhawal.png
- │    ├── faculty_mentor.png
- │    ├── focus.jpg
- │    ├── grey.png
- │    ├── lofi.jpg
- │    ├── logo-1.svg
- │    ├── logo-2.png
- │    ├── logo.svg
- │    ├── motivation_mindset.png
- │    ├── motivation_mindset_thumb.png
- │    ├── project_mentor.png
- │    ├── red.png
- │    ├── yellow.png
- │    └── projects/
- │         ├── audio_steganography.png
- │         ├── face_recognition.png
- │         ├── slotswapper.png
- │         ├── parkinsons_detection.png
- │         ├── house_price.png
- │         ├── art_gallery.png
- │         ├── court_scraper.png
- │         ├── image_cifar10.png
- │         ├── resume_analyzer.png
- │         ├── docs_hub.png
- │         └── emotion_chatbot.png
- ├── App.tsx
- └── index.tsx
+ ├── pages/          → All the main sections (Skills, Projects, Career Goals, etc.)
+ ├── profilePage/    → Recruiter/Developer/Stalker/Adventure profile logic
+ ├── components/     → Buttons, Navbar, Scroll handler
+ ├── images/         → All static images + project thumbnails
+ ├── browse/         → Profile selection landing screen
+ ├── queries/        → Stubbed data fetchers (DatoCMS removed)
 ```
 
 ---
 
-## 🚀 Deployment (Vercel)
+## 🧠 Tech Stack  
+- **React + TypeScript**  
+- **CSS (Custom Netflix theme)**  
+- **Framer Motion (UI animations)**  
+- **React Router DOM**  
+- **Vercel Deployment**  
 
-### **1. Initialize repo**
+---
+
+## 📸 Screenshots  
+You can add your screenshots folder back if you want GitHub to show previews.
+
+(If you re-add them, link images like below)
+
 ```
-git init
-git add .
-git commit -m "Initial portfolio"
+![Homepage](screenshots/SS1.png)
+![Profiles](screenshots/SS2.png)
+![Projects](screenshots/SS3.png)
 ```
 
-### **2. Push to GitHub**
-```
-git remote add origin https://github.com/YOUR_USERNAME/netflix-themed-portfolio.git
-git branch -M main
-git push -u origin main
+---
+
+## 🔧 Installation & Setup  
+```bash
+git clone https://github.com/dhawalsarode/netflix-portfolio.git
+cd netflix-portfolio
+npm install
+npm start
 ```
 
-### **3. Deploy on Vercel**
-- Go to https://vercel.com  
-- Import the GitHub repo  
-- Set:
-  - **Framework:** CRA / Vite (auto-detect)
-  - **Build Command:** npm run build
-  - **Output Directory:** build/
+---
 
-Done 🎉 Your portfolio is live.
+## 🚀 Deployment (Vercel)  
+This app is optimized for Vercel. Deploy using:
+
+```bash
+vercel --prod
+```
+
+Or connect to GitHub via Vercel dashboard.
 
 ---
 
 ## 📄 License  
-This project is open‑source. Feel free to use or customize it.
+This project is **NOT open‑sourced**.  
+No license added intentionally to keep the code private & protected.
 
 ---
 
-## 📬 Contact  
-**Dhawal Sarode**  
+## ✨ Author  
+**Dhawal Sarode**   
 LinkedIn: https://linkedin.com/in/dhawal-sarode  
+GitHub: https://github.com/dhawalsarode
+
+---
+
+## ⭐ Don’t Forget  
+If you ever use this portfolio as a template for a public version, add credits.
+
