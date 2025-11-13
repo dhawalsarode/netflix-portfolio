@@ -1,65 +1,79 @@
-# 🎬 Netflix-Themed Personal Portfolio  
-A cinematic, interactive personal portfolio inspired by the Netflix interface — built with React + TypeScript.  
-Designed to showcase your skills, projects, career journey, and personality through a smooth, immersive UI.
+# 🎬 Netflix-Themed Portfolio  
+A cinematic, interactive, Netflix-style personal portfolio built using **React + TypeScript**, with smooth transitions, animated sections, and a personalized multi-profile homepage.
 
 ---
 
 ## 🚀 Live Demo  
-🔗 **Live Portfolio:** https://netflix-portfolio-self.vercel.app/  
+🔗 **Portfolio:** https://netflix-portfolio-self.vercel.app/
 
 ---
 
-## ⭐ Features  
-- 🎥 **Netflix-style cinematic UI** (dynamic hero, hover animations, smooth transitions)  
-- 🧑‍💻 **Profiles section** — Recruiter, Developer, Stalker, Adventure  
-- 🎯 **Career Goals** — structured, polished professional growth roadmap  
-- 💼 **Work Experience** — timeline-based presentation  
-- 🛠️ **Skills (Tech Stack)** — modern badge/grid layout  
-- 🧪 **Projects Section** — with thumbnails, tags, GitHub links & hover effects  
-- 🔍 **Behind the Code** — concise breakdown of each project with real contributions  
-- 🧠 **Motivation & Mindset** — your personal values & thought process  
-- 🎵 **Music Page** — curated soundtracks for focus & creativity  
-- 🌐 **Fully responsive** (mobile, tablet, desktop)  
-- 🎨 **Custom CSS theme** with Netflix red (#E50914)
+## 🔥 Tech Stack
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)
 
 ---
 
-## 📁 Project Structure (Important Folders)  
+## 📌 Features
+
+### 🎭 **Netflix-style Profile Selection**
+Choose between:
+- Recruiter  
+- Developer  
+- Stalker  
+- Adventure  
+
+Each profile shows customized:
+- Sections  
+- Thumbnails  
+- UI recommendations  
+
+---
+
+### 🎥 **Cinematic Intro Animation**
+- Logo expands like the Netflix intro  
+- Click to activate sound  
+- Auto-redirect into the portfolio world  
+
+---
+
+### 🧩 **Sections Included**
+- 🧑‍💼 Career Goals  
+- 🧠 Skills  
+- 💼 Work Experience  
+- 🧾 Certifications  
+- 🧱 Projects (Beautified, with thumbnails)
+- 🧪 Behind the Code (deep dives)
+- ❤️ Motivation & Mindset Reading
+- 🎶 Music / Lofi Player  
+- 📨 Contact Me  
+
+---
+
+## 📁 Folder Structure (Simplified)
+
 ```
 src/
- ├── pages/          → All the main sections (Skills, Projects, Career Goals, etc.)
- ├── profilePage/    → Recruiter/Developer/Stalker/Adventure profile logic
- ├── components/     → Buttons, Navbar, Scroll handler
- ├── images/         → All static images + project thumbnails
- ├── browse/         → Profile selection landing screen
- ├── queries/        → Stubbed data fetchers (DatoCMS removed)
+ ├── components/
+ ├── pages/
+ ├── profilePage/
+ ├── queries/
+ ├── images/
+ │    ├── projects/
+ │    ├── behind_the_code.png
+ │    ├── motivation_mindset.png
+ ├── App.tsx
+ ├── index.tsx
 ```
 
 ---
 
-## 🧠 Tech Stack  
-- **React + TypeScript**  
-- **CSS (Custom Netflix theme)**  
-- **Framer Motion (UI animations)**  
-- **React Router DOM**  
-- **Vercel Deployment**  
+## 🛠️ Installation
 
----
-
-## 📸 Screenshots  
-You can add your screenshots folder back if you want GitHub to show previews.
-
-(If you re-add them, link images like below)
-
-```
-![Homepage](screenshots/SS1.png)
-![Profiles](screenshots/SS2.png)
-![Projects](screenshots/SS3.png)
-```
-
----
-
-## 🔧 Installation & Setup  
 ```bash
 git clone https://github.com/dhawalsarode/netflix-portfolio.git
 cd netflix-portfolio
@@ -69,30 +83,18 @@ npm start
 
 ---
 
-## 🚀 Deployment (Vercel)  
-This app is optimized for Vercel. Deploy using:
-
-```bash
-vercel --prod
-```
-
-Or connect to GitHub via Vercel dashboard.
+## 🌐 Deployment  
+Hosted on **Vercel** with automatic builds on every push to `main`.
 
 ---
 
-## 📄 License  
-This project is **NOT open‑sourced**.  
-No license added intentionally to keep the code private & protected.
-
----
-
-## ✨ Author  
+## 👨‍💻 Author  
 **Dhawal Sarode**   
-LinkedIn: https://linkedin.com/in/dhawal-sarode  
-GitHub: https://github.com/dhawalsarode
+🔗 LinkedIn: https://linkedin.com/in/dhawal-sarode  
+🔗 GitHub: https://github.com/dhawalsarode
 
 ---
 
-## ⭐ Don’t Forget  
-If you ever use this portfolio as a template for a public version, add credits.
+## ⭐ Show Support  
+If you found this project interesting or visually cool, consider giving the repo a **⭐ star** on GitHub!
 
